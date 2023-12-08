@@ -68,6 +68,17 @@
     crossorigin="anonymous"
   ></script> -->
   <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
+
+<script>
+        (function() {
+                var redirect = sessionStorage.redirect;
+                delete sessionStorage.redirect
+                if (redirect && redirect !== location.href) {
+                        history.replaceState(null, null, redirect)
+                }
+        })
+</script>
+
 </head>
 <body>
 <div id="root"></div>
