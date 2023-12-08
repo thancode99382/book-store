@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import "../../assets/css/Product-Viewer-1-untitled.css";
-import "../../assets/js/Product-Viewer-1-3.1.1-jquery.min.js";
-import "../../assets/js/Product-Viewer-1-untitled.js";
+import "/public/css/Product-Viewer-1-untitled.css";
+import "/public/js/Product-Viewer-1-3.1.1-jquery.min.js";
+import "/public/js/Product-Viewer-1-untitled.js";
 
 export default function CardReview({ image }) {
   return (
