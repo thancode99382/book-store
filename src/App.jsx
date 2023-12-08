@@ -12,7 +12,7 @@ function App() {
   return (
       <div>
         <UserContext.Provider value={{currentUser, setCurrentUser}}>
-          <Router>
+          <Router basename={process.env.NODE_ENV === 'production'? '/book-store': '/'}>
             <Routes>
               {publicRoutes.map((route, index) => {
                 const Page = route.component;
