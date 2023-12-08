@@ -1,0 +1,49 @@
+.wrapper {
+    margin-top: 20px;
+}
+
+.product-image {
+    position: relative;
+    margin-top: 20px;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.product-image .image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* background-image: url("https://images-na.ssl-images-amazon.com/images/I/61sYyfNwPSL._SL1024_.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: -webkit-transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.product-thumbnails {
+    margin-top: 30px;
+}
+
+.product-thumbnails img {
+    height: 5vw;
+    border-radius: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.product-thumbnails img:hover {
+    opacity: 0.6;
+}
+
+.product-details {
+    margin-top: 30px;
+}
+
+.product-details p {
+    margin-top: 20px;
+}
