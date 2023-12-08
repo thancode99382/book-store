@@ -2,6 +2,7 @@ import {useContext, useState} from "react";
 import {Link} from "react-router-dom";
 import config from "../../config/index.js";
 import axios from "axios";
+import { apiBaseUrl } from "../../config/apiBaseUrl.jsx";
 
 export default function Register() {
   const [user, setUser] = useState({username: "", password: ""});
@@ -29,7 +30,7 @@ export default function Register() {
     if (user.username !== '' && user.password !== '' && user.password === confirmPassword) {
       // localStorage.setItem('username', user.username)
       // localStorage.setItem('password', user.password)
-      axios.post('http://localhost:3000/users', user).then(response => {
+      axios.post(`${apiBaseUrl}/users`, user).then(response => {
         setIsRegistered(true)
       }).catch(error => {
         console.error("Error creating user: ", error)

@@ -2,6 +2,7 @@ import {useContext, useState} from "react";
 import {useNavigate} from 'react-router-dom'
 import axios from "axios";
 import {UserContext} from "../User/UserContext.jsx";
+import { apiBaseUrl } from "../../config/apiBaseUrl.jsx";
 
 export default function Login() {
   const [userEntered, setUserEntered] = useState({username: "", password: ""});
@@ -28,7 +29,7 @@ export default function Login() {
 
   function handleSubmit(event) {
     event.preventDefault()
-    axios.get('http://localhost:3000/users').then(response => {
+    axios.get(`${apiBaseUrl}/users`).then(response => {
       const users = response.data
       const userExists = users.find(user => user.username === userEntered.username && user.password === userEntered.password)
       if (userExists) {
