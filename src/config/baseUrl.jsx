@@ -1,1 +1,1 @@
-export const baseUrl = process.env.PUBLIC || ''
+export const baseUrl = process.env.PUBLIC_URL || '';
