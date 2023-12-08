@@ -54,7 +54,7 @@ export default function ShopCategory() {
               <div className="col-sm-5 col-lg-8 col-xl-6 d-xl-flex justify-content-xl-center align-items-xl-center">
                 <img
                     className="img-fluid"
-                    src="/assets/img/—Pngtree—creative%20electronic%20paper%20book_622858.png"
+                    src={`${process.env.PUBLIC_URL}/assets/img/—Pngtree—creative%20electronic%20paper%20book_622858.png`}
                     style={{
                       transform: "rotate(10deg) scale(1.63)",
                       maxWidth: "100%",
@@ -110,7 +110,7 @@ export default function ShopCategory() {
               <div className="col-sm-5 col-xl-6 d-xl-flex align-items-xl-center">
                 <img
                     className="img-fluid"
-                    src="/assets/img/pngwing.com.png"
+                    src={`${process.env.PUBLIC_URL}/assets/img/pngwing.com.png`}
                     style={{width: "100%"}}
                 />
               </div>
@@ -162,7 +162,7 @@ export default function ShopCategory() {
               <div className="col-sm-5 col-xl-6 d-xl-flex align-items-xl-center">
                 <img
                     className="img-fluid"
-                    src="/assets/img/pngwing.com(1).png"
+                    src={`${process.env.PUBLIC_URL}/assets/img/pngwing.com(1).png`}
                     style={{width: "100%"}}
                 />
               </div>
