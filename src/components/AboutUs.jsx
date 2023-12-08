@@ -1,4 +1,4 @@
-import {AboutUsJson} from "../json/AboutUsJson.js";
+import {AboutUsJson} from "../json/AboutUsJson.jsx";
 
 
 export default function AboutUs() {

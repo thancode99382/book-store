@@ -10,6 +10,9 @@ export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
     base: '/',
+    define: {
+      'process.env.PUBLIC_URL': command === 'serve'? '""' : '"/book-store'
+    }
   }
 
   if (command !== 'serve') {
