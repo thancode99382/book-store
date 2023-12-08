@@ -3,6 +3,7 @@ import {useContext, useState} from "react";
 import {CartContext} from "../Cart/CartContext.jsx";
 import config from "../../config/index.js";
 import {CardProductContext} from "../Cart/CardProductProvider.jsx";
+import { baseUrl } from "../../config/baseUrl.jsx";
 
 export default function ShowInterestingBook({book}) {
 
@@ -52,7 +53,7 @@ export default function ShowInterestingBook({book}) {
             <div className="flex-auto flex space-x-4">
               <a
 
-                  href={`${config.routes.learnmore}/${book.isbn13}`}
+                  href={`${baseUrl}${config.routes.learnmore}/${book.isbn13}`}
                   onClick={() => {
                     setProduct(book);
                   }}

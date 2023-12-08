@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import config from "../../config/index.js";
 import {CardProductContext} from "../Cart/CardProductProvider.jsx";
 import {useContext, useState} from "react";
+import { baseUrl } from "../../config/baseUrl.jsx";
 
 export default function ShowNewBook({newBook, addToCart}) {
 
@@ -48,7 +49,7 @@ export default function ShowNewBook({newBook, addToCart}) {
                   className="h-10 px-2 font-semibold rounded-md text-white flex items-center justify-center"
                   style={{background: "#2969ED"}}
                   type="submit"
-                  href={`${config.routes.learnmore}/${newBook.isbn13}`}
+                  href={`${baseUrl}${config.routes.learnmore}/${newBook.isbn13}`}
                   onClick={() => {
                     setProduct(newBook);
                   }}>
