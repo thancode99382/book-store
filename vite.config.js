@@ -11,7 +11,7 @@ export default defineConfig(({ command }) => {
     plugins: [react()],
     base: '/',
     define: {
-      'process.env.PUBLIC_URL': command === 'serve'? '""' : '"/book-store'
+      'process.env.PUBLIC_URL': command === 'serve'? '""' : '"/book-store"'
     }
   }
 
